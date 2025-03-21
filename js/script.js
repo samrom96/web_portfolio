@@ -158,3 +158,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+ // 7. Vérification de la taille d'écran lors du redimensionnement
+ function checkScreenSize() {
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+        if (menuToggle.classList.contains('active')) {
+            menuToggle.classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('resize', checkScreenSize);
