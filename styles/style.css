@@ -549,12 +549,11 @@ h1 {
         align-items: center;
         padding: 20px 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        transform: translateY(-150%);
-        transition: transform 0.3s ease;
+        display: none; /* Caché par défaut */
     }
     
     .nav-links.active {
-        transform: translateY(0);
+        display: flex; /* S'affiche quand actif */
     }
     
     .nav-links li {
