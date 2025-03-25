@@ -597,6 +597,19 @@ h1 {
     }
 }
 
+/* Android */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nav-links {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
 /* Pour s'assurer que les animations se déclenchent au bon moment */
 @media (prefers-reduced-motion: reduce) {
     .progress {
