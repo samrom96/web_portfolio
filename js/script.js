@@ -161,6 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  // 7. Vérification de la taille d'écran lors du redimensionnement
+ const navLinks = document.querySelector('.nav-links'); // Remplacez '.nav-links' par le sélecteur CSS approprié de nos liens de navigation
+ const menuToggle = document.querySelector('.menu-toggle'); // Adaptez le sélecteur à votre HTML
  function checkScreenSize() {
     if (window.innerWidth > 768) {
         navLinks.classList.remove('active');
